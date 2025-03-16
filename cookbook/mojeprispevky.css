@@ -1,0 +1,328 @@
+/* Responsivita */
+@media (max-width: 768px) {
+  li img {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+    border-bottom: none;
+    padding-bottom: 10px;
+  }
+
+  header nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+  }
+  ul.prispevky li img {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+
+  form input[type="text"],
+  form input[type="password"],
+  form textarea,
+  form select,
+  form button {
+    width: 100%;
+  }
+
+  .edit-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.prispevky li form .storno {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #caea57;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #4caf50;
+  padding: 10px 0;
+  color: white;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hlavní obsah */
+main {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+/* Seznam příspěvků */
+ul.prispevky {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.prispevky li {
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul.prispevky li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Obrázky v příspěvcích */
+ul.prispevky li img {
+  float: right;
+  margin: 0 0 10px 20px;
+  max-width: 300px;
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ul.prispevky li::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul.prispevky li p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+ul.prispevky li p .strong {
+  color: #4caf50;
+}
+
+/* Tlačítka */
+button {
+  background-color: #ff9233;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d97d2c;
+}
+
+/* Editovací tlačítko */
+.edit-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #4caf50;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+ul.prispevky li form {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+ul.prispevky li form .storno {
+  background-color: #ccc;
+  color: #333;
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.prispevky li form .storno:hover {
+  background-color: #b3b3b3;
+  color: white;
+}
+
+/* Stránkování */
+.strankovani {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.strankovani a {
+  text-decoration: none;
+  color: #4caf50;
+  margin: 0 5px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.strankovani a.aktivni {
+  background-color: #4caf50;
+  color: white;
+}
+
+.strankovani a:hover:not(.aktivni) {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: auto;
+}
+.red {
+  color: #ff9233;
+}
+
+.neniprispevek {
+  text-align: center;
+}
+
+.odkaz {
+  color: #2e7d32;
+  text-decoration: underline;
+}
+
+/* UPRAVA PRISPEVKU */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  padding: 12px 20px; /* Zvýšení paddingu pro větší tlačítko */
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+.strong {
+  font-weight: bold;
+}

@@ -1,0 +1,121 @@
+@media print {
+  body,
+  nav,
+  footer,
+  main,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  li,
+  a,
+  button,
+  label,
+  input,
+  select,
+  textarea,
+  span {
+    color: black;
+    background-color: white;
+  }
+  h1 {
+    color: black;
+  }
+  header {
+    display: none;
+  }
+  li p img,
+  li img,
+  img {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  ul.prispevky li p .strong {
+    color: black;
+  }
+  ul.prispevky li img {
+    display: none;
+  }
+  .odkaz {
+    color: black;
+  }
+  * {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  main li {
+    box-shadow: none;
+    transition: none;
+  }
+  .strankovani {
+    display: none;
+  }
+
+  a::after {
+    content: "";
+  }
+
+  #filterForm {
+    display: none;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .decorative,
+  .background-image,
+  .shadow,
+  .no-print,
+  .hidden-print {
+    display: none;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .no-print,
+  .hidden-print {
+    display: none;
+  }
+  .strong {
+    color: black;
+  }
+  .nadpis {
+    color: black;
+  }
+}

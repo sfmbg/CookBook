@@ -1,0 +1,47 @@
+[
+    {
+        "username": "barunkagrego",
+        "password": "$2y$10$.zyPOXKCDuu\/7D.VlQ1o..oG0Djyo6ZHr2XMi7j1dKl5bvGyUWTCC",
+        "role": "admin"
+    },
+    {
+        "username": "dave",
+        "password": "$2y$10$8\/TgnZDirS1331uPK49kXugZjbkLuTW54Q3ynh9n6Ch4uvc4Iu8qq",
+        "role": "user"
+    },
+    {
+        "username": "maja",
+        "password": "$2y$10$yV4XgMxvXc5vBKU2Ady\/dO37PArUvaFyNfRROoZKpWg1lQbnIlVOS",
+        "role": "user"
+    },
+    {
+        "username": "user123",
+        "password": "$2y$10$WG9.ZVLYSACmMpoL.4.rc.aRonddoWxsy3MMVcsgUWAs1YOY3pXPO",
+        "role": "user"
+    },
+    {
+        "username": "nelis",
+        "password": "$2y$10$rgsRdE86O0KRYyeyK.5OMO0gu4msffWpmwj7.ZLoCWymNNxx6wcQi",
+        "role": "user"
+    },
+    {
+        "username": "admin123",
+        "password": "$2y$10$KROi9egub2BOT308bPN22eBclS2LmKi96ksGnv3P0oSy2kJrbBj1S",
+        "role": "admin"
+    },
+    {
+        "username": "<><><><><><><><>",
+        "password": "$2y$10$n8WXiEFfEUtjTgFP66YoqOal.SzLLc2btial8s6HGS5OWkzOr2.be",
+        "role": "admin"
+    },
+    {
+        "username": "aaaaaaaaaaaaaaaaaaaa",
+        "password": "$2y$10$7a3EYrAxbWFlXFh5TVgt\/ebeCqhk0lV3x1qS42IJLFvjKQXr1nnTe",
+        "role": "user"
+    },
+    {
+        "username": "koko",
+        "password": "$2y$10$wTNbWPf\/HUcxp2eHy.DbhuVS5MFjUkSvtbIqkk9u6cQlMZc1m53ru",
+        "role": "user"
+    }
+]

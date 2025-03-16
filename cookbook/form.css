@@ -1,0 +1,253 @@
+/* Responsivita */
+@media (max-width: 768px) {
+    
+    header nav ul {
+        flex-direction: column;    /* Změní směr flexboxu na sloupec */
+        align-items: center;       /* Vycentruje položky horizontálně */
+    }
+    
+    header nav ul li {
+        margin: 10px 0;            /* Přidá vertikální prostor mezi položkami */
+        border-bottom: none;       /* Odstraní spodní ohraničení, pokud není potřeba */
+        padding-bottom: 10px;      /* Přidá vnitřní odsazení dole */
+    }
+    
+    header nav ul li a {
+        display: block;            /* Zajistí, že odkazy zabírají celou šířku rodičovského prvku */
+        width: 100%;               /* Nastaví šířku odkazu na 100% kontejneru */
+        text-align: center;        /* Vycentruje text uvnitř odkazu */
+        padding-top: 5px;
+    }
+}
+/* Obecné nastavení */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #caea57;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1; /* Zajišťuje, že main zabírá dostupný prostor */
+    max-width: 800px; /* Zachování původní šířky */
+    width: 100%; /* Použije plnou šířku až do max-width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Zajištění správného box modelu */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Stylizace formuláře */
+form {
+    max-width: 600px; /* Zvýšení šířky formuláře pro lepší vzhled */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styl pro popisky */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styl pro vstupní pole, textarea, select a tlačítko */
+form input[type="text"],
+form input[type="password"],
+form textarea,
+form select,
+form button {
+    display: block;
+    width: 100%; /* Zajistí, že všechny prvky mají stejnou šířku */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Zvýraznění aktivního vstupního pole, textarea a select */
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Styl textarea */
+form textarea {
+    resize: vertical; /* Povolí vertikální změnu velikosti */
+    height: 100px; /* Výchozí výška textarea */
+}
+
+/* Styl tlačítka */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+/* Hover efekt na tlačítku */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Chybová zpráva */
+form p[style="color: red;"] {
+    text-align: center;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/*tlacitko na odhlaseni*/
+.logoutbutton {
+    display: block; /* Změní tlačítko na blokový prvek */
+    margin: 20px auto; /* Horizontální vycentrování a horní/mích okraj */
+    padding: 12px 24px; /* Vnitřní odsazení pro větší klikací oblast */
+    background-color: #ff9233; /* Atraktivní červená barva pozadí */
+    color: white; /* Bílý text */
+    border: none; /* Odstranění ohraničení */
+    border-radius: 5px; /* Jemné zaoblení rohů */
+    font-size: 16px; /* Zvýšená velikost písma */
+    font-weight: bold; /* Tučné písmo */
+    cursor: pointer; /* Změna kurzoru na ruku při najetí */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Plynulé přechody pro hover efekt */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Jemný stín pro hloubku */
+}
+
+/* Hover efekt pro tlačítko Odhlásit se */
+.logoutbutton:hover {
+    background-color: #d97d2c; /* Tmavší červená při najetí */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Zvýšení stínu při hoveru */
+}
+
+p {
+    text-align: center;
+}
+
+main a {
+    color:#4CAF50;
+    text-decoration: none;
+}
+
+main a:visited {
+    color:#4CAF50;
+    text-decoration: none;
+}
+
+/* Styl pro zpětnou vazbu k uživatelskému jménu */
+#usernameFeedback {
+    font-size: 12px;
+    color: #e74c3c;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    display: block;
+}
+.strong{
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+/* form.css */
+
+/* Styl pro jednotlivé skupiny formuláře */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styl pro štítky */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styl pro vstupní prvky */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styl pro tlačítko */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff9233;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #d97d2c;
+}
+
